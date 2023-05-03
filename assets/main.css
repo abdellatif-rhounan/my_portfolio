@@ -23,7 +23,7 @@
 }
 
 html {
-  width: 993px; /* !!!!*/
+  width: 992px; /* !!!!*/
 }
 
 body {
@@ -41,7 +41,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 993px; /* !!!! */
+  max-width: 992px; /* !!!! */
   width: 100%;
   padding: 20px var(--page-padding-x);
   background: transparent;
