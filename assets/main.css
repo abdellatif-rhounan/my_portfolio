@@ -73,6 +73,7 @@ a {
   position: relative;
   height: 100vh;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 var(--page-padding-x);
 }
@@ -153,6 +154,14 @@ a {
 }
 
 .btn-box a:hover::before {
+  width: 100%;
+}
+
+.home-img {
+  width: 294px;
+}
+
+.home-img img {
   width: 100%;
 }
 
