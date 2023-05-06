@@ -554,6 +554,40 @@ section {
   cursor: pointer;
 }
 
+/* Footer Styling */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem var(--page-px);
+  background: var(--second-bg-color);
+}
+
+.footer p {
+  font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--brand-color);
+  border-radius: 0.8rem;
+  transition: 0.3s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--brand-color);
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--bg-color);
+}
+
 /* keyframes animation */
 @keyframes showRight {
   100% {
