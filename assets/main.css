@@ -136,6 +136,10 @@ section {
   z-index: 100;
 }
 
+.header.sticky {
+  background: var(--second-bg-color);
+}
+
 .logo {
   position: relative;
   font-size: 2.5rem;
@@ -592,5 +596,12 @@ section {
 @keyframes showRight {
   100% {
     width: 0;
+  }
+}
+
+/* breakpoints */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
   }
 }
