@@ -4,7 +4,7 @@
 :root {
   /* colors */
   --bg-color: #081b29;
-  --second-bg-color: #323946;
+  --second-bg-color: #122341;
   --text-color: #ededed;
   --brand-color: #00abf0;
 
@@ -27,7 +27,8 @@
 }
 
 html {
-  width: 992px; /* !!!!*/
+  min-width: 992px;
+  max-width: 1200px;
   font-size: 62.5%;
   overflow-x: hidden;
 }
@@ -44,7 +45,7 @@ a {
 
 section {
   min-height: 100vh;
-  padding: 10rem var(--page-px) 2rem;
+  padding: 10rem var(--page-px) 3rem;
 }
 
 /* helpers classes */
@@ -72,8 +73,8 @@ section {
   display: inline-block;
   padding: 1rem 2rem;
   border: 2px solid var(--brand-color);
-  border-radius: 6px;
-  font-size: 1.8rem;
+  border-radius: 8px;
+  font-size: 1.7rem;
   font-weight: 600;
   z-index: 1;
   overflow: hidden;
@@ -88,14 +89,6 @@ section {
 .btn.btn-empty {
   background: var(--bg-color);
   color: var(--brand-color);
-}
-
-.btn.btn-filled:hover {
-  color: var(--brand-color);
-}
-
-.btn.btn-empty:hover {
-  color: var(--bg-color);
 }
 
 .btn::before {
@@ -121,15 +114,24 @@ section {
   width: 100%;
 }
 
+.btn.btn-filled:hover {
+  color: var(--brand-color);
+}
+
+.btn.btn-empty:hover {
+  color: var(--bg-color);
+}
+
 /* header styling */
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 992px; /* !!!! */
+  min-width: 992px;
+  max-width: 1200px;
   width: 100%;
   padding: 1rem var(--page-px);
-  background: transparent;
+  background: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,7 +139,7 @@ section {
 }
 
 .header.sticky {
-  background: var(--second-bg-color);
+  border-bottom: 0.1rem solid #00abf04f;
 }
 
 .logo {
@@ -199,16 +201,17 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
   padding-bottom: 10rem;
 }
 
 .home-content {
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 .home-content h1 {
   position: relative;
-  font-size: 3.7rem;
+  font-size: 4.4rem;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -227,7 +230,7 @@ section {
 
 .home-content h3 {
   position: relative;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: var(--brand-color);
 }
@@ -262,17 +265,14 @@ section {
   animation-delay: 0.9s;
 }
 
-.home-content .btn-box {
-  width: 40rem;
-}
-
 .home-content .btn-box::before {
   animation-delay: 1.1s;
 }
 
 .home-img {
   position: relative;
-  width: 33.4rem;
+  flex: 1 0 33rem;
+  max-width: 44rem;
 }
 
 .home-img::before {
@@ -327,10 +327,6 @@ section {
   transition: 0.3s;
 }
 
-.home-social a:hover {
-  color: var(--bg-color);
-}
-
 .home-social a::before {
   content: "";
   position: absolute;
@@ -341,6 +337,10 @@ section {
   background: var(--brand-color);
   z-index: -1;
   transition: 0.3s;
+}
+
+.home-social a:hover {
+  color: var(--bg-color);
 }
 
 .home-social a:hover::before {
@@ -599,7 +599,7 @@ section {
   }
 }
 
-/* breakpoints */
+/* BREAKPOINTS */
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
