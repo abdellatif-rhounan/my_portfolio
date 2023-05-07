@@ -430,7 +430,7 @@ section {
 
 .service-box h3 {
   font-size: 2.5rem;
-  margin-bottom: 1.4rem;
+  margin: 1.4rem 0;
 }
 
 .service-box p {
@@ -448,10 +448,6 @@ section {
   background: var(--second-bg-color);
 }
 
-.works h2 {
-  margin-bottom: 4rem;
-}
-
 .works-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -462,18 +458,13 @@ section {
 .works-container .work-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--bg-color);
+  box-shadow: 0 0 2rem black;
   overflow: hidden;
-  display: flex;
 }
 
 .work-box img {
   width: 100%;
   transition: 0.3s ease;
-}
-
-.work-box img:hover {
-  transform: scale(1.1);
 }
 
 .work-box .work-layer {
@@ -482,15 +473,18 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), var(--brand-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), var(--brand-color));
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 3rem;
+  padding: 2rem;
   transform: translateY(100%);
   transition: 0.3s ease;
+}
+
+.work-box:hover img {
+  transform: scale(1.2);
 }
 
 .work-box:hover .work-layer {
@@ -498,12 +492,14 @@ section {
 }
 
 .work-layer h4 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .work-layer p {
-  font-size: 1.6rem;
-  margin: 0.3rem 0 1rem;
+  max-height: 10rem;
+  font-size: 1.7rem;
+  overflow: hidden;
+  margin: 2rem 0;
 }
 
 .work-layer a {
@@ -514,12 +510,17 @@ section {
   height: 5rem;
   background: var(--text-color);
   border-radius: 50%;
+  transition: 0.3s ease;
 }
 
 .work-layer a i {
   font-size: 2rem;
   font-weight: 600;
   color: var(--bg-color);
+}
+
+.work-layer a:hover {
+  transform: scale(1.08);
 }
 
 /* Contact Section Styling */
