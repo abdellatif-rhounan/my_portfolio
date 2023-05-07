@@ -10,7 +10,7 @@ window.onscroll = () => {
 
   // ========= Scroll Active Links =======
   sections.forEach(sec => {
-    let offset = sec.offsetTop - 100;
+    let offset = sec.offsetTop - 50;
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
 
