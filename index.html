@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdellatif's Portfolio</title>
+    <title>Mon Portfolio</title>
     <!-- box icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -16,219 +16,177 @@
   <body>
     <!-- header -->
     <header class="header">
-      <a href="#" class="logo">Portfolio.</a>
+      <a href="index.html" class="logo">Portfolio.</a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
-        <a href="#home" class="active">home</a>
-        <a href="#about">about</a>
+        <a href="#home" class="active">accueil</a>
+        <a href="#about">à propos</a>
         <a href="#services">services</a>
-        <a href="#works">works</a>
+        <a href="#works">travaux</a>
         <a href="#contact">contact</a>
       </nav>
     </header>
-    <!-- //header -->
 
     <!-- home section -->
     <section class="home" id="home">
       <div class="home-content">
-        <h1>Hi, I'm Abdellatif Rhounan</h1>
-        <h3>Fullstack Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta
-          cumque vel harum dolorum deleniti officia quod debitis distinctio
-          veniam? Fugiat, provident. At aspernatur nemo quam unde.
-        </p>
+        <span>Bonjour,</span>
+        <h1>Je suis Abdellatif Rhounan</h1>
+        <h2>Développeur Full Stack</h2>
         <div class="btn-box">
-          <a href="#" class="btn btn-filled">Download CV</a>
-          <a href="#" class="btn btn-empty">Explore Projects</a>
+          <a href="./assets/CV_Abdellatif.pdf" class="btn btn-filled" download
+            >Télécharger CV</a
+          >
+          <a href="#works" class="btn btn-empty">Explorer Mes Projets</a>
         </div>
       </div>
 
       <div class="home-img">
-        <img src="./assets/developper.png" alt="Developer illustration" />
+        <img
+          src="./assets/images/developer.png"
+          alt="Illustration du développeur"
+        />
       </div>
 
-      <div class="home-social">
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
-        <a href="#"><i class="bx bxl-github"></i></a>
-        <a href="#"><i class="bx bxs-phone"></i></a>
-        <a href="#"><i class="bx bxl-gmail"></i></a>
-      </div>
+      <address class="home-social">
+        <a href="mailto:abdellatif.rhounan@gmail.com" title="Mon Compte Gmail"
+          ><i class="bx bxl-gmail"></i
+        ></a>
+        <a href="tel:+212614171911" title="Mon Numéro de Télephone"
+          ><i class="bx bxs-phone"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/abdellatif-rhounan"
+          target="_blank"
+          title="Mon Compte LinkedIn"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="https://www.github.com/abdellatif-rhounan"
+          target="_blank"
+          title="Mon Compte Github"
+          ><i class="bx bxl-github"></i
+        ></a>
+      </address>
     </section>
-    <!-- //home section -->
 
     <!-- about section -->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="./assets/profile_photo.png" alt="My Profile Picture" />
+        <img src="./assets/images/profile.png" alt="Ma photo de profil" />
       </div>
 
       <div class="about-content">
-        <h2 class="heading">About Me</h2>
-        <h3>Fullstack Developer!</h3>
+        <h2 class="heading">À Propos de Moi</h2>
+        <h3>Développeur Full Stack!</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
-          ipsa sint explicabo temporibus officia sequi, aliquam dignissimos!
+          Je suis un Ingénieur développeur, créatif, innovant et passionné par
+          le développement informatique, Progressant et améliorant les
+          compétences chaque jour. Orienté vers les objectifs et motivé.
         </p>
-        <a href="#" class="btn btn-filled">Download CV</a>
+        <a href="./assets/CV_Abdellatif.pdf" class="btn btn-filled" download
+          >Télécharger CV</a
+        >
       </div>
     </section>
-    <!-- //about section -->
 
     <!-- services section -->
     <section class="services" id="services">
-      <h2 class="heading">My Services</h2>
+      <h2 class="heading">Mes Services</h2>
 
       <div class="services-container">
         <div class="service-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            exercitationem!
-          </p>
-          <a href="#" class="btn btn-filled">Read More</a>
+          <i class="bx bxs-paint"></i>
+          <h3>Développement Web Front-end</h3>
+          <div class="tags">
+            <div class="tag-box">
+              <span>#html</span>
+            </div>
+            <div class="tag-box">
+              <span>#css</span>
+              <span>#sass</span>
+              <span>#bootstrap</span>
+            </div>
+            <div class="tag-box">
+              <span>#javascript</span>
+              <span>#jquery</span>
+              <span>#vue.js</span>
+              <span>#ajax</span>
+            </div>
+          </div>
         </div>
 
         <div class="service-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            exercitationem!
-          </p>
-          <a href="#" class="btn btn-filled">Read More</a>
-        </div>
-
-        <div class="service-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            exercitationem!
-          </p>
-          <a href="#" class="btn btn-filled">Read More</a>
+          <i class="bx bx-server"></i>
+          <h3>Développement Web Back-end</h3>
+          <div class="tags">
+            <div class="tag-box">
+              <span>#php</span>
+              <span>#laravel</span>
+            </div>
+            <div class="tag-box">
+              <span>#mysql</span>
+              <span>#json</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- //services section -->
 
     <!-- Works Section -->
     <section class="works" id="works">
-      <h2 class="heading">Latest Projects</h2>
+      <h2 class="heading">Dernier Projets</h2>
 
       <div class="works-container">
         <div class="work-box">
-          <img src="./assets/profile_photo.png" alt="" />
+          <img
+            src="./assets/images/my_portfolio_project.png"
+            alt="Mon Portfolio Site Web"
+          />
           <div class="work-layer">
-            <h4>My Portfolio</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              eum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quaerat, eum! Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quaerat, eum!
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="work-box">
-          <img src="./assets/profile_photo.png" alt="" />
-          <div class="work-layer">
-            <h4>My Portfolio</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              eum!
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="work-box">
-          <img src="./assets/profile_photo.png" alt="" />
-          <div class="work-layer">
-            <h4>My Portfolio</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              eum!
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="work-box">
-          <img src="./assets/profile_photo.png" alt="" />
-          <div class="work-layer">
-            <h4>My Portfolio</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              eum!
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="work-box">
-          <img src="./assets/profile_photo.png" alt="" />
-          <div class="work-layer">
-            <h4>My Portfolio</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              eum!
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="work-box">
-          <img src="./assets/profile_photo.png" alt="" />
-          <div class="work-layer">
-            <h4>My Portfolio</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              eum!
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <h3>Mon Portfolio</h3>
+            <a href="index.html" target="_blank" title="Voir le site"
+              ><i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
-    <!-- //Works Section -->
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-      <h2 class="heading">Contact Me</h2>
+      <h2 class="heading">Contactez Moi</h2>
 
-      <form action="#">
+      <form action="#send_me_message.php" target="_blank">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" placeholder="Nom et Prénom" />
+          <input type="email" placeholder="Adresse Email" />
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="number" placeholder="Numéro de Télephone" />
+          <input type="text" placeholder="Object" />
         </div>
 
-        <textarea cols="50" rows="10" placeholder="Your Message"></textarea>
-        <button type="submit" class="btn btn-filled">Send Message</button>
+        <textarea rows="10" placeholder="Votre Message"></textarea>
+        <button type="submit" class="btn btn-filled">Envoyer</button>
       </form>
     </section>
-    <!-- //Contact Section -->
 
     <!-- Footer Section -->
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2023 by Abdellatif | All Rights Reserved.</p>
+        <p>
+          Copyright &copy; 2023 Par Abdellatif | Tous les droits sont réservés.
+        </p>
       </div>
 
       <div class="footer-iconTop">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
-    <!-- //Footer Section -->
 
     <!-- Custom JS -->
     <script src="./assets/script.js"></script>

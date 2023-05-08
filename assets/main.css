@@ -74,7 +74,7 @@ section {
   padding: 1rem 2rem;
   border: 2px solid var(--brand-color);
   border-radius: 8px;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 600;
   z-index: 1;
   overflow: hidden;
@@ -216,11 +216,18 @@ section {
   max-width: 60rem;
 }
 
+.home-content > span {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--brand-color);
+}
+
 .home-content h1 {
   position: relative;
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   line-height: 1.2;
+  margin: 0.5rem 0;
 }
 
 .home-content h1::before {
@@ -235,14 +242,15 @@ section {
   animation-delay: 0.5s;
 }
 
-.home-content h3 {
+.home-content h2 {
   position: relative;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--brand-color);
+  margin-bottom: 3rem;
 }
 
-.home-content h3::before {
+.home-content h2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -252,24 +260,6 @@ section {
   background: var(--bg-color);
   animation: showRight 1s ease forwards;
   animation-delay: 0.7s;
-}
-
-.home-content p {
-  position: relative;
-  font-size: 1.6rem;
-  margin: 2rem 0 4rem;
-}
-
-.home-content p::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-color);
-  animation: showRight 1s ease forwards;
-  animation-delay: 0.9s;
 }
 
 .home-content .btn-box::before {
@@ -402,7 +392,7 @@ section {
 .services-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -430,12 +420,20 @@ section {
 
 .service-box h3 {
   font-size: 2.5rem;
-  margin: 1.4rem 0;
+  margin-top: 1.4rem;
 }
 
-.service-box p {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
+.service-box .tags {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.tag-box span {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.tag-box > span:last-child {
+  margin-right: 0;
 }
 
 .service-box .btn.btn-filled::before {
@@ -491,15 +489,9 @@ section {
   transform: translateY(0);
 }
 
-.work-layer h4 {
+.work-layer h3 {
   font-size: 2.8rem;
-}
-
-.work-layer p {
-  max-height: 10rem;
-  font-size: 1.7rem;
-  overflow: hidden;
-  margin: 2rem 0;
+  margin-bottom: 3rem;
 }
 
 .work-layer a {
