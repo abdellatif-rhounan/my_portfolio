@@ -151,24 +151,22 @@ img {
   width: 60%;
 }
 .home-content > span {
-  font-size: 4rem;
+  font-size: 3rem;
   font-style: italic;
   color: #00abf0;
 }
 .home-content h1 {
   font-size: 4.5rem;
-  font-weight: 700;
   line-height: 1.2;
   margin: 0.5rem 0;
 }
 .home-content h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 3.3rem;
   color: #00abf0;
   margin-bottom: 3rem;
 }
 .home-content .btn {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 .home-img {
@@ -221,21 +219,20 @@ img {
 }
 .about .about-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 4rem;
 }
 .about img {
-  width: 40rem;
+  width: calc(40% - 4rem);
   border-radius: 8px;
-  box-shadow: 0 0 2rem black;
+  box-shadow: 0 0 2rem rgba(0, 171, 240, 0.66);
 }
 
 .about-content {
-  width: 61rem;
+  width: 60%;
 }
 .about-content h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 .about-content p {
   font-size: 1.8rem;
@@ -247,14 +244,15 @@ img {
   display: flex;
   align-items: center;
 }
-.services .services-container {
+
+.services-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.services .service-box {
+.service-box {
   flex: 1 1 30rem;
   max-width: 50rem;
   background: #122341;
@@ -264,30 +262,31 @@ img {
   text-align: center;
   transition: 0.3s;
 }
-.services .service-box:hover {
+.service-box:hover {
   border-color: #00abf0;
   transform: scale(1.02);
 }
-.services .service-box i {
+.service-box i {
   font-size: 7rem;
   color: #00abf0;
 }
-.services .service-box h3 {
+.service-box h3 {
   font-size: 2.2rem;
   margin: 1.4rem 0 2rem;
 }
-.services .service-box h3 span {
+.service-box h3 span {
   white-space: nowrap;
 }
-.services .service-box .tags {
+
+.service-box .tags {
   font-size: 1.7rem;
   color: rgba(0, 171, 240, 0.66);
 }
-.services .service-box .tags span {
+.service-box .tags span {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 1.3rem;
 }
-.services .service-box .tag-box > span:last-child {
+.service-box .tags .tag-box > span:last-child {
   margin-right: 0;
 }
 
@@ -303,13 +302,13 @@ img {
   align-items: center;
   gap: 2.5rem;
 }
-.works-container .work-box {
+
+.work-box {
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 2rem black;
+  box-shadow: 0 0 2rem rgba(0, 171, 240, 0.66);
   overflow: hidden;
 }
-
 .work-box img {
   transition: 0.3s;
 }
@@ -355,17 +354,17 @@ img {
   color: #081b29;
 }
 .work-layer a:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .contact {
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 .contact h2 {
   margin-bottom: 3rem;
 }
 .contact form {
-  max-width: 85rem;
+  width: 90rem;
   margin: 0 auto 4rem;
   text-align: center;
 }
@@ -409,7 +408,7 @@ img {
   flex-wrap: wrap;
 }
 .footer p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .footer-iconTop a {

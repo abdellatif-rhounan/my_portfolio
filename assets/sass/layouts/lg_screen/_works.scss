@@ -14,16 +14,14 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
-
-  .work-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 2rem black;
-    overflow: hidden;
-  }
 }
 
 .work-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem var.$bt_color;
+  overflow: hidden;
+
   img {
     transition: 0.3s;
   }
@@ -78,7 +76,7 @@
     }
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.15);
     }
   }
 }

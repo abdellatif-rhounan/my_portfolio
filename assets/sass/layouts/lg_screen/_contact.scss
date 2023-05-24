@@ -4,14 +4,14 @@
 @use "../../helpers/variables" as var;
 
 .contact {
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 
   h2 {
     margin-bottom: 3rem;
   }
 
   form {
-    max-width: 85rem;
+    width: 90rem;
     margin: 0 auto 4rem;
     text-align: center;
   }

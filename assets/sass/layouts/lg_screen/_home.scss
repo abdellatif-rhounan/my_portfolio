@@ -20,27 +20,25 @@
   width: 60%;
 
   > span {
-    font-size: 4rem;
+    font-size: 3rem;
     font-style: italic;
     color: var.$brand_color;
   }
 
   h1 {
     font-size: 4.5rem;
-    font-weight: 700;
     line-height: 1.2;
     margin: 0.5rem 0;
   }
 
   h2 {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 3.3rem;
     color: var.$brand_color;
     margin-bottom: 3rem;
   }
 
   .btn {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 

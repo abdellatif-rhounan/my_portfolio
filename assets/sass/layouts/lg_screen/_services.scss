@@ -1,4 +1,4 @@
-// Services Styling
+// ******* Services Styling *******
 
 // Import Helpers
 @use "../../helpers/variables" as var;
@@ -6,16 +6,16 @@
 .services {
   display: flex;
   align-items: center;
-
-  .services-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
 }
 
-.services .service-box {
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.service-box {
   flex: 1 1 30rem;
   max-width: 50rem;
   background: var.$second_bg_color;
@@ -43,15 +43,15 @@
       white-space: nowrap;
     }
   }
+}
 
-  .tags {
-    font-size: 1.7rem;
-    color: var.$bt-color;
+.service-box .tags {
+  font-size: 1.7rem;
+  color: var.$bt-color;
 
-    span {
-      display: inline-block;
-      margin-right: 1rem;
-    }
+  span {
+    display: inline-block;
+    margin-right: 1.3rem;
   }
 
   .tag-box {
