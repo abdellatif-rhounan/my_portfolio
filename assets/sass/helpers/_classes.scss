@@ -1,0 +1,73 @@
+// ************* Helpers Classes ***************
+
+// Import Helpers
+@use "./variables" as var;
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var.$brand_color;
+  border: 0.2rem solid var.$brand_color;
+  border-radius: 0.8rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var.$bg_color;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var.$bg_color;
+    z-index: -1;
+    transition: 0.3s;
+  }
+
+  &.second-bg::before {
+    background: var.$second_bg_color;
+  }
+
+  &.empty {
+    background: var.$bg_color;
+    color: var.$brand_color;
+
+    &::before {
+      background: var.$brand_color;
+    }
+  }
+
+  &:hover {
+    color: var.$brand_color;
+  }
+  &.empty:hover {
+    color: var.$bg_color;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+  color: var.$brand_color;
+  margin-bottom: 5rem;
+}

@@ -1,0 +1,82 @@
+// Works Styling
+
+// import Helpers
+@use "../../../helpers/variables" as var;
+
+.works {
+  background: var.$second_bg_color;
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+
+  .work-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem black;
+    overflow: hidden;
+  }
+}
+
+.work-box {
+  img {
+    transition: 0.3s ease;
+  }
+
+  .work-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var.$brand_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+
+    .work-layer {
+      transform: translateY(0);
+    }
+  }
+}
+
+.work-layer {
+  h3 {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var.$text_color;
+    border-radius: 50%;
+    transition: 0.3s ease;
+
+    i {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var.$bg_color;
+    }
+
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}

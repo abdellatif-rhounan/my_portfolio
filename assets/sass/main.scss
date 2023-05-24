@@ -1,0 +1,24 @@
+// Import Sass Files
+@use "./helpers/reset";
+@use "./helpers/classes";
+@use "./layouts/lg_screen/header";
+@use "./layouts/lg_screen/home";
+@use "./layouts/lg_screen/about";
+@use "./layouts/lg_screen/services";
+@use "./layouts/lg_screen/works";
+@use "./layouts/lg_screen/contact";
+@use "./layouts/lg_screen/footer";
+
+// Keyframes Animation
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+// Breakpoints
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}

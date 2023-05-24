@@ -1,0 +1,47 @@
+// Contact Styling
+
+// Import Helpers
+@use "../../helpers/variables" as var;
+
+.contact {
+  padding-bottom: 4rem;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  form {
+    max-width: 85rem;
+    margin: 0 auto 4rem;
+    text-align: center;
+  }
+
+  .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    input {
+      width: calc(50% - 1rem);
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 1.6rem;
+    font-size: 1.8rem;
+    color: var.$text_color;
+    background: var.$second_bg_color;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+}

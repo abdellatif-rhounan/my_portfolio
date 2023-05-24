@@ -1,0 +1,37 @@
+// ************ About Styling **********
+
+// Import Helpers
+@use "../../helpers/variables" as var;
+
+.about {
+  display: flex;
+  align-items: center;
+  background: var.$second_bg_color;
+
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  img {
+    width: 40rem;
+    border-radius: 8px;
+    box-shadow: 0 0 2rem black;
+  }
+}
+
+.about-content {
+  width: 61rem;
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    text-align: justify;
+    margin: 1rem 0 3rem;
+  }
+}

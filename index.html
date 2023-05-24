@@ -11,124 +11,133 @@
       rel="stylesheet"
     />
     <!-- custom css -->
-    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/sass/main.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
-      <a href="index.html" class="logo">Portfolio.</a>
+      <div class="container">
+        <a href="index.html" class="logo">Portfolio.</a>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-menu" id="menu-icon"></i>
 
-      <nav class="navbar">
-        <a href="#home" class="active">accueil</a>
-        <a href="#about">à propos</a>
-        <a href="#services">services</a>
-        <a href="#works">travaux</a>
-        <a href="#contact">contact</a>
-      </nav>
+        <nav class="navbar">
+          <a href="#home" class="active">accueil</a>
+          <a href="#about">à propos</a>
+          <a href="#services">services</a>
+          <a href="#works">travaux</a>
+          <a href="#contact">contact</a>
+        </nav>
+      </div>
     </header>
 
     <!-- home section -->
     <section class="home" id="home">
-      <div class="home-content">
-        <span>Bonjour,</span>
-        <h1>Je suis Abdellatif Rhounan</h1>
-        <h2>Développeur Full Stack</h2>
-        <div class="btn-box">
-          <a href="./assets/CV_Abdellatif.pdf" class="btn btn-filled" download
-            >Télécharger CV</a
-          >
-          <a href="#works" class="btn btn-empty">Explorer Mes Projets</a>
+      <div class="container">
+        <div class="home-content">
+          <span>Bonjour,</span>
+          <h1>Je suis Abdellatif Rhounan</h1>
+          <h2>Développeur Full Stack</h2>
+          <div class="btn-box">
+            <a href="./assets/CV_Abdellatif.pdf" class="btn" download
+              >Télécharger CV</a
+            >
+            <a href="#works" class="btn empty">Explorer Mes Projets</a>
+          </div>
         </div>
-      </div>
 
-      <div class="home-img">
-        <img
-          src="./assets/images/developer.png"
-          alt="Illustration du développeur"
-        />
-      </div>
+        <div class="home-img">
+          <img
+            src="./assets/images/developer.png"
+            alt="Illustration du développeur"
+          />
+        </div>
 
-      <address class="home-social">
-        <a href="mailto:abdellatif.rhounan@gmail.com" title="Mon Compte Gmail"
-          ><i class="bx bxl-gmail"></i
-        ></a>
-        <a href="tel:+212614171911" title="Mon Numéro de Télephone"
-          ><i class="bx bxs-phone"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/abdellatif-rhounan"
-          target="_blank"
-          title="Mon Compte LinkedIn"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a
-          href="https://www.github.com/abdellatif-rhounan"
-          target="_blank"
-          title="Mon Compte Github"
-          ><i class="bx bxl-github"></i
-        ></a>
-      </address>
+        <address class="home-social">
+          <a href="mailto:abdellatif.rhounan@gmail.com" title="Mon Compte Gmail"
+            ><i class="bx bxl-gmail"></i
+          ></a>
+          <a href="tel:+212614171911" title="Mon Numéro de Télephone"
+            ><i class="bx bxs-phone"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/abdellatif-rhounan"
+            target="_blank"
+            title="Mon Compte LinkedIn"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://www.github.com/abdellatif-rhounan"
+            target="_blank"
+            title="Mon Compte Github"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </address>
+      </div>
     </section>
 
     <!-- about section -->
     <section class="about" id="about">
-      <div class="about-img">
-        <img src="./assets/images/profile.png" alt="Ma photo de profil" />
-      </div>
-
-      <div class="about-content">
+      <div class="container">
         <h2 class="heading">À Propos de Moi</h2>
-        <h3>Développeur Full Stack!</h3>
-        <p>
-          Je suis un Ingénieur développeur, créatif, innovant et passionné par
-          le développement informatique, Progressant et améliorant les
-          compétences chaque jour. Orienté vers les objectifs et motivé.
-        </p>
-        <a href="./assets/CV_Abdellatif.pdf" class="btn btn-filled" download
-          >Télécharger CV</a
-        >
+
+        <div class="about-container">
+          <img src="./assets/images/profile.png" alt="Ma photo de profil" />
+
+          <div class="about-content">
+            <h3>Développeur Full Stack!</h3>
+            <p>
+              Je suis un Ingénieur développeur, créatif, innovant et passionné
+              par le développement informatique, Progressant et améliorant les
+              compétences chaque jour. Orienté vers les objectifs et motivé.
+            </p>
+            <a href="./assets/CV_Abdellatif.pdf" class="btn second-bg" download
+              >Télécharger CV</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- services section -->
     <section class="services" id="services">
-      <h2 class="heading">Mes Services</h2>
+      <div class="container">
+        <h2 class="heading">Mes Services</h2>
 
-      <div class="services-container">
-        <div class="service-box">
-          <i class="bx bxs-paint"></i>
-          <h3>Développement Web Front-end</h3>
-          <div class="tags">
-            <div class="tag-box">
-              <span>#html</span>
-            </div>
-            <div class="tag-box">
-              <span>#css</span>
-              <span>#sass</span>
-              <span>#bootstrap</span>
-            </div>
-            <div class="tag-box">
-              <span>#javascript</span>
-              <span>#jquery</span>
-              <span>#vue.js</span>
-              <span>#ajax</span>
+        <div class="services-container">
+          <div class="service-box">
+            <i class="bx bxs-paint"></i>
+            <h3>Développement Web <span>Front-end</span></h3>
+            <div class="tags">
+              <div class="tag-box">
+                <span>#html</span>
+              </div>
+              <div class="tag-box">
+                <span>#css</span>
+                <span>#sass</span>
+                <span>#bootstrap</span>
+              </div>
+              <div class="tag-box">
+                <span>#javascript</span>
+                <span>#jquery</span>
+                <span>#vue.js</span>
+                <span>#ajax</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="service-box">
-          <i class="bx bx-server"></i>
-          <h3>Développement Web Back-end</h3>
-          <div class="tags">
-            <div class="tag-box">
-              <span>#php</span>
-              <span>#laravel</span>
-            </div>
-            <div class="tag-box">
-              <span>#mysql</span>
-              <span>#json</span>
+          <div class="service-box">
+            <i class="bx bx-server"></i>
+            <h3>Développement Web <span>Back-end</span></h3>
+            <div class="tags">
+              <div class="tag-box">
+                <span>#php</span>
+                <span>#laravel</span>
+              </div>
+              <div class="tag-box">
+                <span>#mysql</span>
+                <span>#json</span>
+              </div>
             </div>
           </div>
         </div>
@@ -137,19 +146,21 @@
 
     <!-- Works Section -->
     <section class="works" id="works">
-      <h2 class="heading">Dernier Projets</h2>
+      <div class="container">
+        <h2 class="heading">Dernier Projets</h2>
 
-      <div class="works-container">
-        <div class="work-box">
-          <img
-            src="./assets/images/my_portfolio_project.png"
-            alt="Mon Portfolio Site Web"
-          />
-          <div class="work-layer">
-            <h3>Mon Portfolio</h3>
-            <a href="index.html" target="_blank" title="Voir le site"
-              ><i class="bx bx-link-external"></i
-            ></a>
+        <div class="works-container">
+          <div class="work-box">
+            <img
+              src="./assets/images/my_portfolio_project.png"
+              alt="Mon Portfolio Site Web"
+            />
+            <div class="work-layer">
+              <h3>Mon Portfolio</h3>
+              <a href="index.html" target="_blank" title="Voir le site"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -157,34 +168,39 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-      <h2 class="heading">Contactez Moi</h2>
+      <div class="container">
+        <h2 class="heading">Contactez Moi</h2>
 
-      <form action="#send_me_message.php" target="_blank">
-        <div class="input-box">
-          <input type="text" placeholder="Nom et Prénom" />
-          <input type="email" placeholder="Adresse Email" />
-        </div>
+        <form action="#send_me_message.php" target="_blank">
+          <div class="input-box">
+            <input type="text" placeholder="Nom et Prénom" />
+            <input type="email" placeholder="Adresse Email" />
+          </div>
 
-        <div class="input-box">
-          <input type="number" placeholder="Numéro de Télephone" />
-          <input type="text" placeholder="Object" />
-        </div>
+          <div class="input-box">
+            <input type="number" placeholder="Numéro de Télephone" />
+            <input type="text" placeholder="Object" />
+          </div>
 
-        <textarea rows="10" placeholder="Votre Message"></textarea>
-        <button type="submit" class="btn btn-filled">Envoyer</button>
-      </form>
+          <textarea rows="10" placeholder="Votre Message"></textarea>
+          <button type="submit" class="btn second-bg">Envoyer</button>
+        </form>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer">
-      <div class="footer-text">
-        <p>
-          Copyright &copy; 2023 Par Abdellatif | Tous les droits sont réservés.
-        </p>
-      </div>
+      <div class="container">
+        <div class="footer-text">
+          <p>
+            Copyright &copy; 2023 Par Abdellatif | Tous les droits sont
+            réservés.
+          </p>
+        </div>
 
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <div class="footer-iconTop">
+          <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
       </div>
     </footer>
 
