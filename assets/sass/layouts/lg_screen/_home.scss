@@ -1,6 +1,6 @@
-// Home Styling
+// *********** Home Styling **************
 
-// import Helpers
+// Import Helpers
 @use "../../helpers/variables" as var;
 
 .home {
@@ -11,100 +11,46 @@
 
   .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 3rem;
   }
 }
 
 .home-content {
-  max-width: 60rem;
+  width: 60%;
 
   > span {
-    font-size: 3rem;
+    font-size: 4rem;
     font-style: italic;
     color: var.$brand_color;
   }
 
   h1 {
-    position: relative;
-    font-size: 3.6rem;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
     margin: 0.5rem 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: var.$bg_color;
-      animation: showRight 1s ease forwards;
-      animation-delay: 0.5s;
-    }
   }
 
   h2 {
-    position: relative;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: var.$brand_color;
     margin-bottom: 3rem;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: var.$bg_color;
-      animation: showRight 1s ease forwards;
-      animation-delay: 0.7s;
-    }
   }
 
-  .btn-box::before {
-    animation-delay: 1.1s;
+  .btn {
+    font-size: 1.9rem;
   }
 }
 
 .home-img {
-  position: relative;
-  flex: 1 0 33rem;
-  max-width: 44rem;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: var.$bg_color;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
-  }
+  width: calc(40% - 3rem);
 }
 
 .home-social {
   position: absolute;
   bottom: 3rem;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: var.$bg_color;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.4s;
-    z-index: 2;
-  }
 
   a {
     position: relative;
@@ -134,13 +80,13 @@
       z-index: -1;
       transition: 0.3s;
     }
-  }
 
-  a:hover {
-    color: var.$bg_color;
+    &:hover {
+      color: var.$bg_color;
 
-    &::before {
-      width: 100%;
+      &::before {
+        width: 100%;
+      }
     }
   }
 }
