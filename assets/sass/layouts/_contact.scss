@@ -1,7 +1,7 @@
 // Contact Styling
 
 // Import Helpers
-@use "../../helpers/variables" as var;
+@use "../helpers/variables" as var;
 
 .contact {
   padding-bottom: 5rem;
@@ -43,5 +43,14 @@
 
   .btn {
     cursor: pointer;
+  }
+}
+
+// *** Breakpoints ***
+
+// xlarge Screen Styling
+@media (min-width: 1200px) {
+  .contact {
+    padding-bottom: 6rem;
   }
 }

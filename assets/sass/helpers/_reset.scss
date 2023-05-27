@@ -40,3 +40,12 @@ section {
 img {
   width: 100%;
 }
+
+// *** Breakpoints ***
+
+// xlarge Screen Styling
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}

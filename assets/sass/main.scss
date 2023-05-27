@@ -1,17 +1,12 @@
-// Import Sass Files
+// Import Helpers Files
 @use "./helpers/reset";
 @use "./helpers/classes";
-@use "./layouts/lg_screen/header";
-@use "./layouts/lg_screen/home";
-@use "./layouts/lg_screen/about";
-@use "./layouts/lg_screen/services";
-@use "./layouts/lg_screen/works";
-@use "./layouts/lg_screen/contact";
-@use "./layouts/lg_screen/footer";
 
-// Breakpoints
-@media (min-width: 1200px) {
-  html {
-    font-size: 62.5%;
-  }
-}
+// Import Layouts Files
+@use "./layouts/header";
+@use "./layouts/home";
+@use "./layouts/about";
+@use "./layouts/services";
+@use "./layouts/works";
+@use "./layouts/contact";
+@use "./layouts/footer";

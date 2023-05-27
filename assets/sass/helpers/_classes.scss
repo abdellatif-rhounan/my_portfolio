@@ -71,3 +71,19 @@
   color: var.$brand_color;
   margin-bottom: 5rem;
 }
+
+// *** Breakpoints ***
+
+// xlarge Screen Styling
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+// xxlarge Screen Styling
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}

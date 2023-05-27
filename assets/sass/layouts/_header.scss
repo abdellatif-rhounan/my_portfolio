@@ -1,7 +1,7 @@
 // ************ Header Styling **************
 
 // Import Helpers
-@use "../../helpers/variables" as var;
+@use "../helpers/variables" as var;
 
 .header {
   position: fixed;
@@ -43,5 +43,17 @@
   &:hover,
   &.active {
     color: var.$brand_color;
+  }
+}
+
+// *** Breakpoints ***
+
+// xlarge Screen Styling
+@media (min-width: 1200px) {
+  .header .logo {
+    font-size: 2.5rem;
+  }
+  .navbar a {
+    font-size: 1.6rem;
   }
 }

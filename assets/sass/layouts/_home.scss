@@ -1,7 +1,7 @@
 // *********** Home Styling **************
 
 // Import Helpers
-@use "../../helpers/variables" as var;
+@use "../helpers/variables" as var;
 
 .home {
   position: relative;
@@ -11,6 +11,7 @@
 
   .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 3rem;
   }
@@ -86,5 +87,26 @@
         width: 100%;
       }
     }
+  }
+}
+
+// *** Breakpoints ***
+
+// xlarge Screen Styling
+@media (min-width: 1200px) {
+  .home {
+    padding-bottom: 8rem;
+  }
+  .home-content {
+    width: 50%;
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  .home-img {
+    width: 45%;
   }
 }

@@ -34,6 +34,11 @@ img {
   width: 100%;
 }
 
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -98,6 +103,16 @@ img {
   margin-bottom: 5rem;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
 .header {
   position: fixed;
   top: 0;
@@ -135,6 +150,14 @@ img {
   color: #00abf0;
 }
 
+@media (min-width: 1200px) {
+  .header .logo {
+    font-size: 2.5rem;
+  }
+  .navbar a {
+    font-size: 1.6rem;
+  }
+}
 .home {
   position: relative;
   display: flex;
@@ -143,6 +166,7 @@ img {
 }
 .home .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 3rem;
 }
@@ -212,6 +236,23 @@ img {
   width: 100%;
 }
 
+@media (min-width: 1200px) {
+  .home {
+    padding-bottom: 8rem;
+  }
+  .home-content {
+    width: 50%;
+  }
+  .home-content h1 {
+    font-size: 4rem;
+  }
+  .home-content h2 {
+    font-size: 3rem;
+  }
+  .home-img {
+    width: 45%;
+  }
+}
 .about {
   display: flex;
   align-items: center;
@@ -240,6 +281,25 @@ img {
   margin: 1rem 0 3rem;
 }
 
+@media (min-width: 1200px) {
+  .about img {
+    width: 32%;
+  }
+  .about-content h3 {
+    font-size: 2.6rem;
+  }
+  .about-content p {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1400px) {
+  .about-content {
+    width: 55%;
+  }
+  .about .about-container {
+    gap: 8rem;
+  }
+}
 .services {
   display: flex;
   align-items: center;
@@ -253,8 +313,7 @@ img {
 }
 
 .service-box {
-  flex: 1 1 30rem;
-  max-width: 50rem;
+  width: 45rem;
   background: #122341;
   padding: 2rem;
   border: 0.3rem solid black;
@@ -275,7 +334,7 @@ img {
   margin: 1.4rem 0 2rem;
 }
 .service-box h3 span {
-  white-space: nowrap;
+  display: block;
 }
 
 .service-box .tags {
@@ -290,6 +349,14 @@ img {
   margin-right: 0;
 }
 
+@media (min-width: 1200px) {
+  .service-box i {
+    font-size: 6rem;
+  }
+  .service-box .tags {
+    font-size: 1.8rem;
+  }
+}
 .works {
   display: flex;
   align-items: center;
@@ -393,6 +460,11 @@ img {
   cursor: pointer;
 }
 
+@media (min-width: 1200px) {
+  .contact {
+    padding-bottom: 6rem;
+  }
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -427,10 +499,4 @@ img {
 }
 .footer-iconTop a:hover {
   box-shadow: 0 0 1rem #00abf0;
-}
-
-@media (min-width: 1200px) {
-  html {
-    font-size: 62.5%;
-  }
 }/*# sourceMappingURL=main.css.map */
