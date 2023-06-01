@@ -1,19 +1,19 @@
-// ************ Header Styling **************
+// ============ Header Styling ============
 
 // Import Helpers
-@use "../helpers/variables" as var;
+@use "../helpers/variables" as v;
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0;
-  background: var.$bg_color;
+  padding: 1.3rem 0;
+  background: v.$bg_color;
   z-index: 100;
 
   &.sticky {
-    border-bottom: 0.1rem solid var.$bt_color;
+    border-bottom: 0.1rem solid v.$bt_color;
   }
 
   .container {
@@ -23,7 +23,7 @@
   }
 
   .logo {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     font-weight: 600;
   }
 
@@ -42,18 +42,36 @@
 
   &:hover,
   &.active {
-    color: var.$brand_color;
+    color: v.$brand_color;
   }
 }
 
-// *** Breakpoints ***
+// ==== Breakpoints ====
 
-// xlarge Screen Styling
-@media (min-width: 1200px) {
+// xLarge Screen & Below Styling
+@media (max-width: 1399px) {
+  .header {
+    padding: 1rem 0;
+    .logo {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+// Large Screen & Below Styling
+@media (max-width: 1199px) {
   .header .logo {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   .navbar a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+}
+
+// Medium Screen & Below Styling
+@media (max-width: 991px) {
+  .navbar a {
+    font-size: 1.7rem;
+    margin-left: 3.4rem;
   }
 }

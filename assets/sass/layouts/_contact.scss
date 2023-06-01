@@ -1,18 +1,18 @@
-// Contact Styling
+// ============ Contact Styling ============
 
 // Import Helpers
-@use "../helpers/variables" as var;
+@use "../helpers/variables" as v;
 
 .contact {
-  padding-bottom: 5rem;
+  padding-bottom: 5.3rem;
 
   h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   form {
-    width: 90rem;
-    margin: 0 auto 4rem;
+    max-width: 85rem;
+    margin: 0 auto 2.5rem;
     text-align: center;
   }
 
@@ -30,11 +30,17 @@
   textarea {
     width: 100%;
     padding: 1.6rem;
-    font-size: 1.8rem;
-    color: var.$text_color;
-    background: var.$second_bg_color;
-    border-radius: 0.8rem;
     margin-bottom: 2rem;
+    background: v.$second_bg_color;
+    border: 0.2rem solid #333;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    color: v.$text_color;
+    transition: 0.3s ease;
+
+    &:focus {
+      border-color: v.$brand_color;
+    }
   }
 
   textarea {
@@ -46,11 +52,11 @@
   }
 }
 
-// *** Breakpoints ***
+// ==== Breakpoints ====
 
-// xlarge Screen Styling
-@media (min-width: 1200px) {
+// Large Screen & Below Styling
+@media (max-width: 1200px) {
   .contact {
-    padding-bottom: 6rem;
+    padding-bottom: 6.4rem;
   }
 }

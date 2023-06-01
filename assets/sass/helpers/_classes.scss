@@ -1,10 +1,10 @@
-// ************* Helpers Classes ***************
+// ============ Helpers Classes ============
 
 // Import Helpers
-@use "./variables" as var;
+@use "./variables" as v;
 
 .container {
-  max-width: 960px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -19,12 +19,12 @@
   position: relative;
   display: inline-block;
   padding: 1rem 2rem;
-  background: var.$brand_color;
-  border: 0.2rem solid var.$brand_color;
+  background: v.$brand_color;
+  border: 0.2rem solid v.$brand_color;
   border-radius: 0.8rem;
   font-size: 1.7rem;
   font-weight: 600;
-  color: var.$bg_color;
+  color: v.$bg_color;
   z-index: 1;
   overflow: hidden;
   transition: 0.3s;
@@ -36,29 +36,29 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: var.$bg_color;
+    background: v.$bg_color;
     z-index: -1;
     transition: 0.3s;
   }
 
   &.second-bg::before {
-    background: var.$second_bg_color;
+    background: v.$second_bg_color;
   }
 
   &.empty {
-    background: var.$bg_color;
-    color: var.$brand_color;
+    background: v.$bg_color;
+    color: v.$brand_color;
 
     &::before {
-      background: var.$brand_color;
+      background: v.$brand_color;
     }
   }
 
   &:hover {
-    color: var.$brand_color;
+    color: v.$brand_color;
   }
   &.empty:hover {
-    color: var.$bg_color;
+    color: v.$bg_color;
   }
   &:hover::before {
     width: 100%;
@@ -68,22 +68,43 @@
 .heading {
   text-align: center;
   font-size: 4.5rem;
-  color: var.$brand_color;
+  color: v.$brand_color;
   margin-bottom: 5rem;
 }
 
-// *** Breakpoints ***
+// ==== Breakpoints ====
 
-// xlarge Screen Styling
-@media (min-width: 1200px) {
+// xLarge Screen & Below Styling
+@media (max-width: 1399px) {
   .container {
     max-width: 1140px;
   }
 }
 
-// xxlarge Screen Styling
-@media (min-width: 1400px) {
+// Large Screen & Below Styling
+@media (max-width: 1199px) {
   .container {
-    max-width: 1320px;
+    max-width: 960px;
+  }
+}
+
+// Medium Screen & Below Styling
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+// Small Screen & Below Styling
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+// xSmall Screen & Below Styling
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
   }
 }

@@ -1,13 +1,13 @@
-// *********** Home Styling **************
+// ============ Home Styling ============
 
 // Import Helpers
-@use "../helpers/variables" as var;
+@use "../helpers/variables" as v;
 
 .home {
   position: relative;
   display: flex;
   align-items: center;
-  padding-bottom: 9rem;
+  padding-bottom: 8rem;
 
   .container {
     display: flex;
@@ -18,33 +18,31 @@
 }
 
 .home-content {
-  width: 60%;
+  width: calc(57% - 3rem);
 
   > span {
+    display: inline-block;
     font-size: 3rem;
+    font-weight: 500;
     font-style: italic;
-    color: var.$brand_color;
+    color: v.$brand_color;
+    margin-bottom: 0.5rem;
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1.2;
-    margin: 0.5rem 0;
   }
 
   h2 {
-    font-size: 3.3rem;
-    color: var.$brand_color;
-    margin-bottom: 3rem;
-  }
-
-  .btn {
-    font-size: 1.8rem;
+    font-size: 3rem;
+    color: v.$brand_color;
+    margin: 0.5rem 0 3rem;
   }
 }
 
 .home-img {
-  width: calc(40% - 3rem);
+  width: 43%;
 }
 
 .home-social {
@@ -56,13 +54,13 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
     background: transparent;
-    border: 0.2rem solid var.$brand_color;
+    border: 0.2rem solid v.$brand_color;
     border-radius: 50%;
     font-size: 2rem;
-    color: var.$brand_color;
+    color: v.$brand_color;
     margin-right: 1.5rem;
     z-index: 1;
     overflow: hidden;
@@ -75,13 +73,13 @@
       left: 0;
       width: 0;
       height: 100%;
-      background: var.$brand_color;
+      background: v.$brand_color;
       z-index: -1;
       transition: 0.3s;
     }
 
     &:hover {
-      color: var.$bg_color;
+      color: v.$bg_color;
 
       &::before {
         width: 100%;
@@ -90,23 +88,46 @@
   }
 }
 
-// *** Breakpoints ***
+// ==== Breakpoints ====
 
-// xlarge Screen Styling
-@media (min-width: 1200px) {
+// xLarge Screen & Below Styling
+@media (max-width: 1399px) {
   .home {
-    padding-bottom: 8rem;
+    padding-bottom: 8.5rem;
   }
   .home-content {
-    width: 50%;
+    width: 60%;
+  }
+  .home-img {
+    width: calc(40% - 3rem);
+  }
+}
+
+// Large Screen & Below Styling
+@media (max-width: 1199px) {
+  .home-content {
+    width: 55%;
+  }
+  .home-img {
+    width: calc(45% - 3rem);
+  }
+}
+
+// Medium Screen & Below Styling
+@media (max-width: 991px) {
+  .home-content {
+    width: 60%;
+    span {
+      font-size: 2.5rem;
+    }
     h1 {
-      font-size: 4rem;
+      font-size: 3.2rem;
     }
     h2 {
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
   }
   .home-img {
-    width: 45%;
+    width: calc(43% - 3rem);
   }
 }

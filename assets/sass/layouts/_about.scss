@@ -1,63 +1,63 @@
-// ************ About Styling **********
+// ============ About Styling ============
 
 // Import Helpers
-@use "../helpers/variables" as var;
+@use "../helpers/variables" as v;
 
 .about {
   display: flex;
   align-items: center;
-  background: var.$second_bg_color;
+  background: v.$second_bg_color;
+}
 
-  .about-container {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-  }
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
 
   img {
-    width: calc(40% - 4rem);
+    width: 27%;
     border-radius: 8px;
-    box-shadow: 0 0 2rem var.$bt_color;
+    box-shadow: 0 0 2rem v.$bt_color;
   }
 }
 
 .about-content {
-  width: 60%;
+  width: 56%;
 
   h3 {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    font-style: italic;
     text-align: justify;
     margin: 1rem 0 3rem;
   }
 }
 
-// *** Breakpoints ***
+// ==== Breakpoints ====
 
-// xlarge Screen Styling
-@media (min-width: 1200px) {
-  .about img {
-    width: 32%;
-  }
-  .about-content {
-    h3 {
-      font-size: 2.6rem;
-    }
-    p {
-      font-size: 1.7rem;
+// xLarge Screen & Below Styling
+@media (max-width: 1400px) {
+  .about-container {
+    gap: 4rem;
+
+    img {
+      width: calc(40% - 4rem);
     }
   }
 }
 
-// xxlarge Screen Styling
-@media (min-width: 1400px) {
+// Large Screen & Below Styling
+@media (max-width: 1200px) {
   .about-content {
-    width: 55%;
-  }
-  .about .about-container {
-    gap: 8rem;
+    h3 {
+      font-size: 2.8rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
   }
 }
