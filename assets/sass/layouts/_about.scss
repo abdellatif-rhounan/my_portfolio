@@ -40,12 +40,12 @@
 // ==== Breakpoints ====
 
 // xLarge Screen & Below Styling
-@media (max-width: 1400px) {
+@media (max-width: 1399px) {
   .about-container {
-    gap: 4rem;
+    gap: 6rem;
 
     img {
-      width: calc(40% - 4rem);
+      width: 30%;
     }
   }
 }

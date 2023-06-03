@@ -82,3 +82,12 @@
     }
   }
 }
+
+// ==== Breakpoints ====
+
+// xLarge Screen & Below Styling
+@media (max-width: 1399px) {
+  .work-box img {
+    max-width: 45rem;
+  }
+}
