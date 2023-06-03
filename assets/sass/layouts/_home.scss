@@ -103,16 +103,6 @@
   }
 }
 
-// Large Screen & Below Styling
-@media (max-width: 1199px) {
-  .home-content {
-    width: 55%;
-  }
-  .home-img {
-    width: calc(45% - 3rem);
-  }
-}
-
 // Medium Screen & Below Styling
 @media (max-width: 991px) {
   .home-content {
