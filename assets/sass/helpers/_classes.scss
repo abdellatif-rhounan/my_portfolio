@@ -90,24 +90,3 @@
     font-size: 4rem;
   }
 }
-
-// Medium Screen & Below Styling
-@media (max-width: 991px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-// Small Screen & Below Styling
-@media (max-width: 767px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-// xSmall Screen & Below Styling
-@media (max-width: 575px) {
-  .container {
-    max-width: 100%;
-  }
-}

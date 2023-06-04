@@ -1,8 +1,6 @@
-// Import Helpers Files
+// Import Layouts Files
 @use "./helpers/reset";
 @use "./helpers/classes";
-
-// Import Layouts Files
 @use "./layouts/header";
 @use "./layouts/home";
 @use "./layouts/about";

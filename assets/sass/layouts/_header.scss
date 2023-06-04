@@ -45,13 +45,3 @@
     color: v.$brand_color;
   }
 }
-
-// ==== Breakpoints ====
-
-// Medium Screen & Below Styling
-@media (max-width: 991px) {
-  .navbar a {
-    font-size: 1.7rem;
-    margin-left: 3.4rem;
-  }
-}

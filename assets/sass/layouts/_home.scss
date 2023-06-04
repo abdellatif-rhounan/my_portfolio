@@ -102,22 +102,3 @@
     width: calc(42% - 3rem);
   }
 }
-
-// Medium Screen & Below Styling
-@media (max-width: 991px) {
-  .home-content {
-    width: 60%;
-    span {
-      font-size: 2.5rem;
-    }
-    h1 {
-      font-size: 3.2rem;
-    }
-    h2 {
-      font-size: 2.7rem;
-    }
-  }
-  .home-img {
-    width: calc(43% - 3rem);
-  }
-}
