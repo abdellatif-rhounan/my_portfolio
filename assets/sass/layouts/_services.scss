@@ -1,0 +1,64 @@
+// ============ Services Styling ============
+
+// Import Helpers
+@use "../helpers/variables" as v;
+
+.services {
+  display: flex;
+  align-items: center;
+
+  .container {
+    width: 100%;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.service-box {
+  background: v.$second_bg_color;
+  padding: 2rem;
+  border: 0.2rem solid #333;
+  border-radius: 2rem;
+  text-align: center;
+  transition: 0.3s;
+
+  &:hover {
+    border-color: v.$brand_color;
+  }
+
+  i {
+    font-size: 6rem;
+    color: v.$brand_color;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    margin: 1.2rem 0 2rem;
+
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.service-box .tags {
+  font-size: 1.8rem;
+  color: v.$bt-color;
+
+  span {
+    display: inline-block;
+    margin-right: 1.3rem;
+  }
+}
+
+.service-box .tag-box > span:last-child {
+  margin-right: 0;
+}

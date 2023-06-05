@@ -1,0 +1,10 @@
+// Import Layouts Files
+@use "./helpers/reset";
+@use "./helpers/classes";
+@use "./layouts/header";
+@use "./layouts/home";
+@use "./layouts/about";
+@use "./layouts/services";
+@use "./layouts/works";
+@use "./layouts/contact";
+@use "./layouts/footer";

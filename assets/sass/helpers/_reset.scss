@@ -1,0 +1,51 @@
+// ============ Reset Styling ============
+
+// Import Helpers
+@use "./variables" as v;
+
+// Import Font 'Poppins'
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: v.$font_family, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  background: v.$bg_color;
+  color: v.$text_color;
+}
+
+a {
+  color: v.$text_color;
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 9rem 0 3rem;
+}
+
+img {
+  width: 100%;
+}
+
+// ==== Breakpoints ====
+
+// Large Screen & Below Styling
+@media (max-width: 1199px) {
+  html {
+    font-size: 55%;
+  }
+}

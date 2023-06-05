@@ -1,0 +1,47 @@
+// ============ Header Styling ============
+
+// Import Helpers
+@use "../helpers/variables" as v;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: v.$bg_color;
+  z-index: 100;
+
+  &.sticky {
+    border-bottom: 0.1rem solid v.$bt_color;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 2.6rem;
+    font-weight: 600;
+  }
+
+  #menu-icon {
+    font-size: 3.6rem;
+    display: none;
+  }
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: 4rem;
+  transition: 0.3s;
+
+  &:hover,
+  &.active {
+    color: v.$brand_color;
+  }
+}

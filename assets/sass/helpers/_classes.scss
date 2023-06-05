@@ -1,0 +1,92 @@
+// ============ Helpers Classes ============
+
+// Import Helpers
+@use "./variables" as v;
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: v.$brand_color;
+  border: 0.2rem solid v.$brand_color;
+  border-radius: 0.8rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: v.$bg_color;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: v.$bg_color;
+    z-index: -1;
+    transition: 0.3s;
+  }
+
+  &.second-bg::before {
+    background: v.$second_bg_color;
+  }
+
+  &.empty {
+    background: v.$bg_color;
+    color: v.$brand_color;
+
+    &::before {
+      background: v.$brand_color;
+    }
+  }
+
+  &:hover {
+    color: v.$brand_color;
+  }
+  &.empty:hover {
+    color: v.$bg_color;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+  color: v.$brand_color;
+  margin-bottom: 5rem;
+}
+
+// ==== Breakpoints ====
+
+// xLarge Screen & Below Styling
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+// Large Screen & Below Styling
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+}

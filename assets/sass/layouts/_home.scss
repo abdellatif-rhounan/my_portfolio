@@ -1,0 +1,118 @@
+// ============ Home Styling ============
+
+// Import Helpers
+@use "../helpers/variables" as v;
+
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 8rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+.home-content {
+  width: calc(57% - 3rem);
+
+  > span {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+    color: v.$brand_color;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: v.$brand_color;
+    margin: 0.5rem 0 3rem;
+  }
+}
+
+.home-img {
+  width: 43%;
+  animation: floatImg 2.5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes floatImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.home-social {
+  position: absolute;
+  bottom: 3rem;
+
+  a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 0.2rem solid v.$brand_color;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: v.$brand_color;
+    margin-right: 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: v.$brand_color;
+      z-index: -1;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: v.$bg_color;
+
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ==== Breakpoints ====
+
+// xLarge Screen & Below Styling
+@media (max-width: 1399px) {
+  .home {
+    padding-bottom: 8.5rem;
+  }
+  .home-content {
+    width: 58%;
+  }
+  .home-img {
+    width: calc(42% - 3rem);
+  }
+}
