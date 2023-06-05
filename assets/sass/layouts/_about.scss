@@ -14,12 +14,12 @@
   justify-content: center;
   align-items: center;
   gap: 7rem;
+}
 
-  img {
-    width: 27%;
-    border-radius: 8px;
-    box-shadow: 0 0 2rem v.$bt_color;
-  }
+.about-img {
+  width: 27%;
+  border-radius: 8px;
+  box-shadow: 0 0 2rem v.$bt_color;
 }
 
 .about-content {
@@ -43,9 +43,9 @@
 @media (max-width: 1399px) {
   .about-container {
     gap: 6rem;
-    img {
-      width: 30%;
-    }
+  }
+  .about-img {
+    width: 30%;
   }
 }
 

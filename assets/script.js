@@ -22,6 +22,9 @@ sections.forEach(sec => {
 window.onscroll = () => {
   let scrollPos = window.scrollY;
 
+  //========== sticky navbar ==========
+  header.classList.toggle('sticky', scrollPos > 50);
+
   // ========= Header Active Link =======
   let i = 0;
   secData.forEach(sec => {
@@ -30,10 +33,20 @@ window.onscroll = () => {
         link.classList.remove("active");
       });
       navLinks[i].classList.add("active");
-
-      //========== sticky navbar ==========
-      header.classList.toggle('sticky', scrollPos > 50);
     }
     i++;
   });
 };
+
+// =========== Scroll Reveal ==========
+ScrollReveal({
+  reset: true,
+  distance: '80px',
+  duration: 1000,
+  delay: 200,
+});
+
+ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
+ScrollReveal().reveal('.home-img, .services-container, .works-container, .contact form', {origin: 'bottom'});
+ScrollReveal().reveal('.home-social, .about-img', {origin: 'left'});
+ScrollReveal().reveal('.about-content', {origin: 'right'});
